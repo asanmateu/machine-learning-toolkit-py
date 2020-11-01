@@ -1,3 +1,7 @@
+# Import necessary modules
+from sklearn.linear_model import Ridge
+from sklearn.model_selection import cross_val_score
+
 def display_plot(cv_scores, cv_scores_std):
     """
     Plot cross-validated R2 for range of different alphas in a Ridge linear model.
@@ -20,11 +24,6 @@ def display_plot(cv_scores, cv_scores_std):
     ax.set_xlim([alpha_space[0], alpha_space[-1]])
     ax.set_xscale('log')
     plt.show()
-
-
-# Import necessary modules
-from sklearn.linear_model import Ridge
-from sklearn.model_selection import cross_val_score
 
 # Setup the array of alphas and lists to store scores
 alpha_space = np.logspace(-4, 0, 50)
