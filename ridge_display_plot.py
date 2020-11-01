@@ -21,4 +21,3 @@ def display_plot(cv_scores, cv_scores_std):
     ax.set_xscale('log')
     plt.show()
 
-
