@@ -1,2 +1,2 @@
-# ML-tools-py
-A collection of tools that I use throughout machine learning projects.
+# Machine Learning Toolkit (Python)
+A collection of tools I use during machine learning projects.
